@@ -2,4 +2,19 @@
     <string name="app_name">BloodApp</string>
     <string name="be_a_donor_nsave_a_life">Be A Donor\nSave A Life</string>
     <string name="blood_icon">Blood Icon</string>
+    <string name="phone_icon">Phone_icon</string>
+    <string name="sms_icon">sms_icon</string>
+    <string name="benefits_for_na_donor">Benefits for\nA Donor</string>
+    <string name="find_blood">Find Blood</string>
+    <string name="be_a_donor">Be A Donor</string>
+    <string name="find_in_hospital">Find in\nHospital</string>
+    <string name="sent_sms">send sms in\ncontact list</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="md_mashiur_rahman">Md.Mashiur Rahman</string>
+    <string name="find_blood_icon">find_blood_icon</string>
+    <string name="findBloodinHospitalIcon">find_blood_in_hospital_icon</string>
+    <string name="benefit_for_a_donor_icon">Benefit_for_a_donor_icon</string>
+    <string name="beAdonorIcon">Be_A_Donor_Icon</string>
+    <string name="send_sms_in_contact_list_icon">send_sms_in_contact_list_icon</string>
+    <string name="send_feedback_icon">send_feedback_icon</string>
 </resources>
