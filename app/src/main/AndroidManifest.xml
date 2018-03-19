@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.user.bloodapp">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
     <application
         android:allowBackup="true"
         android:fullBackupContent="@xml/my_backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/findblood"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/findblood"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".SplashScreen">
@@ -17,8 +18,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DonorList" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".FindBloodInApp" />
+        <activity android:name=".FindBloodInHospital" />
+        <activity android:name=".BenefitForAdonor" />
+        <activity android:name=".BeAdonor" />
+        <activity android:name=".SendSms" />
+        <activity android:name=".SendFeedback" />
+        <activity android:name=".findBloodGroup"></activity>
     </application>
 
 </manifest>
