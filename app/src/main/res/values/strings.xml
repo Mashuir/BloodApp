@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BloodApp</string>
+    <string name="be_a_donor_nsave_a_life">Be A Donor\nSave A Life</string>
+    <string name="blood_icon">Blood Icon</string>
 </resources>
