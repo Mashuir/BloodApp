@@ -1,9 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.user.bloodapp.BeAdonor">
+    android:orientation="vertical"
+    tools:context="com.example.user.bloodapp.BeAdonor"
+    android:background="@drawable/radient_background">
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_name"
+        android:gravity="center"
+        android:inputType="text"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_phone_number"
+        android:gravity="center"
+        android:inputType="number"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/a"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/a_a"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/b"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/b_b"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/o"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/o_o"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ab"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/a_b"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_your_location"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/angry_btn"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:text="@string/done"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:layout_width="243dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A81E3E"
+        android:shadowDx="1"
+        android:shadowDy="0"
+        android:shadowRadius="15"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
