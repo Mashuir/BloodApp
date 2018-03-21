@@ -9,7 +9,7 @@
     <string name="be_a_donor">Be A Donor</string>
     <string name="find_in_hospital">Find in\nHospital</string>
     <string name="sent_sms">send sms in Contact</string>
-    <string name="send_feedback">Send Feedback</string>
+    <string name="send_feedback">About This App</string>
     <string name="md_mashiur_rahman">Md.Mashiur Rahman</string>
     <string name="find_blood_icon">find_blood_icon</string>
     <string name="findBloodinHospitalIcon">find_blood_in_hospital_icon</string>
@@ -117,5 +117,13 @@
     </string-array>
 
     <string name="chooseBloodGroup">Choose Your Blood Group :</string>
+    <string name="facebook_icon">facebook_icon</string>
+    <string name="twitter_icon">twitter_icon</string>
+    <string name="gmail_icon">gmail_icon</string>
+    <string name="feedback_in_about_app">Send Feedback</string>
+    <string name="share_this_app">Share This App</string>
+    <string name="app_developer">App Developer</string>
+    <string name="developer_image">developer image</string>
+    <string name="md_mashuir_rahman">Md. Mashuir Rahman</string>
 
 </resources>
