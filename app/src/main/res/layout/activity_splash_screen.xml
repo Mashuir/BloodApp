@@ -5,10 +5,11 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:textStyle="bold"
+    android:id="@+id/welcomeText"
     android:drawableBottom="@drawable/bloodshadow"
     android:contentDescription="@string/blood_icon"
     android:text="@string/be_a_donor_nsave_a_life"
-    android:textSize="40sp"
+    android:textSize="60sp"
     android:padding="10dp"
     android:textColor="@android:color/holo_green_dark"
     tools:context="com.example.user.bloodapp.SplashScreen">

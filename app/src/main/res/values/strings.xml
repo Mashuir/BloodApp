@@ -80,18 +80,19 @@
     <string name="ad_din_hospital">ad din Hospital</string>
     <string name="alifent_road_dhaka">Alifent Road Dhaka</string>
     <string name="phone_icon_for_hospitlal">Phone_icon_for_hospitlal</string>
+    <string name="select_your_location">Select Your Location</string>
 
 
     <string-array name="Hospital_Name">
-        <item>Bangladesh RedCricnt Blood Bank</item>
-        <item>PG Hospital</item>
-        <item>Badhon</item>
-        <item>Koyantam blood bank</item>
-        <item>Sondhani</item>
-        <item>Islami Blood Bank</item>
-        <item>Ridhom</item>
-        <item>RedCricent</item>
-        <item>BD Blood Bank</item>
+        <item><b>Bangladesh RedCricnt Blood Bank</b></item>
+        <item><b>PG Hospital</b></item>
+        <item><b>Badhon</b></item>
+        <item><b>Koyantam blood bank</b></item>
+        <item><b>Sondhani</b></item>
+        <item><b>Islami Blood Bank</b></item>
+        <item><b>Ridhom</b></item>
+        <item><b>RedCricent</b></item>
+        <item><b>BD Blood Bank</b></item>
     </string-array>
 
     <string-array name="hospital_phone_number">
@@ -105,5 +106,16 @@
         <item>01625677282</item>
         <item>01673839383</item>
     </string-array>
+
+    <string-array name="location_names">
+        <item>Dhaka</item>
+        <item>Barisal</item>
+        <item>Chittagong</item>
+        <item>Noakhali</item>
+        <item>France</item>
+        <item>Ghana</item>
+    </string-array>
+
+    <string name="chooseBloodGroup">Choose Your Blood Group :</string>
 
 </resources>

@@ -6,94 +6,131 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.user.bloodapp.BeAdonor"
-    android:background="@drawable/radient_background">
+    android:paddingTop="15dp"
+    android:background="@drawable/radient_background"
+    android:weightSum="10">
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:hint="@string/enter_your_name"
         android:gravity="center"
-        android:inputType="text"/>
+        android:inputType="text"
+        />
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:hint="@string/enter_your_phone_number"
         android:gravity="center"
         android:inputType="number"/>
 
-    <RadioGroup
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="20dp">
-
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/a"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"/>
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/a_a"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"/>
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/b"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"/>
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/b_b"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"/>
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/o"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"/>
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/o_o"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"/>
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/ab"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"/>
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/a_b"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"/>
-
-    </RadioGroup>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/enter_your_location"
-        android:textSize="30sp"
-        android:textStyle="bold"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Your Blood Group :"
+            android:textSize="23sp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="30dp">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/a"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/a_a"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/b"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/b_b"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/o"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/o_o"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ab"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/a_b"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <Button
+            android:id="@+id/locationSelectBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/radient_background"
+            android:text="Select Your Location"
+            android:textSize="30sp"
+            android:textAllCaps="false"
+            android:onClick="LocationBtn"/>
+
+    </LinearLayout>
+
 
     <Button
         android:id="@+id/angry_btn"
@@ -103,13 +140,15 @@
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         android:layout_width="243dp"
-        android:layout_height="60dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:background="@drawable/buttonshape"
         android:shadowColor="#A81E3E"
         android:shadowDx="1"
         android:shadowDy="0"
         android:shadowRadius="15"
         android:layout_marginTop="15dp"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"/>
 
 </LinearLayout>
