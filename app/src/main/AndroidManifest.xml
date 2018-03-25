@@ -3,6 +3,7 @@
     package="com.example.user.bloodapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -12,22 +13,32 @@
         android:roundIcon="@drawable/findblood"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashScreen">
+        <activity android:name=".SplashScreen"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".FindBloodInApp" />
-        <activity android:name=".FindBloodInHospital" />
-        <activity android:name=".BenefitForAdonor" />
-        <activity android:name=".BeAdonor" />
-        <activity android:name=".SendSms" />
-        <activity android:name=".SendFeedback" />
-        <activity android:name=".findBloodGroup" />
-        <activity android:name=".AboutTheApp"></activity>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FindBloodInApp"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FindBloodInHospital"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".BenefitForAdonor"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".BeAdonor"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SendSms"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SendFeedback"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".findBloodGroup"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AboutTheApp"
+            android:screenOrientation="portrait"></>
     </application>
 
 </manifest>

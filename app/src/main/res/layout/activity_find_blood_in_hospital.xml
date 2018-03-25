@@ -5,13 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/radient_background"
+    android:orientation="vertical"
     tools:context="com.example.user.bloodapp.FindBloodInHospital">
+
+    <SearchView
+        android:id="@+id/hospitalSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="@string/hospitalSearch"/>
 
     <ListView
         android:id="@+id/list_of_hospital"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:divider="@color/colorPrimary"
-        android:dividerHeight="2dp"></ListView>
+        android:dividerHeight="2dp"/>
 
 </LinearLayout>

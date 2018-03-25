@@ -13,7 +13,31 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+             <Button
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="8dp"
+                 android:text="@string/free_ride_for_donate_blood"
+                 android:textAllCaps="false"
+                 android:textSize="25sp"
+                 android:background="@drawable/radient_background"
+                 android:textColor="@android:color/white"
+                 android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/pathaoBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/pathao"
+                    android:contentDescription="@string/pathao_app_icon"/>
+
+            </LinearLayout>
                 <TextView
+                    android:layout_marginTop="15dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/before_blood_donate"

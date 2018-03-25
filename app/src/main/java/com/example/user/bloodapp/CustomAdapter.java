@@ -5,12 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+
 import android.widget.ImageView;
 import android.widget.TextView;
 
-/**
- * Created by User on 3/20/2018.
- */
 
 public class CustomAdapter extends BaseAdapter {
 
@@ -58,4 +56,5 @@ public class CustomAdapter extends BaseAdapter {
         hospital_phone_numbers.setText(hospital_phone_number[i]);
         return view;
     }
+
 }

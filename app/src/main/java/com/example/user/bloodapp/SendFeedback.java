@@ -15,14 +15,14 @@ public class SendFeedback extends AppCompatActivity {
     DatabaseReference myRef;
     EditText feedbackET;
     Button feedBackBtn;
-    DatabaseReference reference;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_send_feedback);
 
-        reference = FirebaseDatabase.getInstance().getReference("FeedBack");
+        myRef = FirebaseDatabase.getInstance().getReference("FeedBack");
 
         feedbackET = findViewById(R.id.sendFeedbackET);
         feedBackBtn = findViewById(R.id.feedBack_btn);
@@ -33,9 +33,6 @@ public class SendFeedback extends AppCompatActivity {
                 feedBack();
             }
         });
-
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        myRef = database.getReference("feedback");
     }
 
     private void feedBack(){
@@ -43,10 +40,10 @@ public class SendFeedback extends AppCompatActivity {
 
         if (!TextUtils.isEmpty(feedBackmsg)){
 
-            String id = reference.push().getKey();
+            String id = myRef.push().getKey();
             FeedBackModelClass feedBack1 = new FeedBackModelClass(feedBackmsg,id);
-            reference.child(id).setValue(feedBack1);
-            feedBackBtn.setText("");
+            myRef.child(id).setValue(feedBack1);
+            feedbackET.setText("");
             Toast.makeText(this, "Thank You Sir/Madam", Toast.LENGTH_SHORT).show();
         }else {
             Toast.makeText(this, "Write Something Sir/Madam", Toast.LENGTH_SHORT).show();
@@ -55,13 +52,3 @@ public class SendFeedback extends AppCompatActivity {
 
 
 }
-
-
-
-
-
-
-
-
-
-

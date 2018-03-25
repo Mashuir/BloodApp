@@ -1,8 +1,5 @@
 package com.example.user.bloodapp;
 
-/**
- * Created by User on 3/22/2018.
- */
 
 public class FeedBackModelClass {
      private String feedback;
@@ -12,7 +9,7 @@ public class FeedBackModelClass {
 
     }
 
-    private FeedBackModelClass(String feedback, String feedBackId) {
+    public FeedBackModelClass(String feedback, String feedBackId) {
         this.feedback = feedback;
         this.feedBackId = feedBackId;
     }

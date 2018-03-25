@@ -1,7 +1,9 @@
 package com.example.user.bloodapp;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -49,14 +51,16 @@ public class AboutTheApp extends AppCompatActivity {
                 facebook.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Toast.makeText(AboutTheApp.this, "facebook clicked", Toast.LENGTH_SHORT).show();
+                       Intent facebookIntent = OpenFacebook(AboutTheApp.this);
+                       startActivity(facebookIntent);
                     }
                 });
                 ImageButton twitter = view1.findViewById(R.id.twitter);
                 twitter.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Toast.makeText(AboutTheApp.this, "facebook clicked", Toast.LENGTH_SHORT).show();
+                        Intent twitterIntent = OpenTwitter(AboutTheApp.this);
+                        startActivity(twitterIntent);
                     }
                 });
                 ImageButton gmail = view1.findViewById(R.id.gmail);
@@ -79,6 +83,26 @@ public class AboutTheApp extends AppCompatActivity {
                 Toast.makeText(this, "Thank You", Toast.LENGTH_SHORT).show();
 
         }
+    }
+    public static Intent OpenFacebook(Context context){
+        try {
+            context.getPackageManager().getPackageInfo("com.facebook.katana",0);
+            return new Intent(Intent.ACTION_VIEW,Uri.parse("https://facebook.com/MashiurRahmanSajib"));
+        } catch (PackageManager.NameNotFoundException e) {
+
+            return new Intent(Intent.ACTION_VIEW,Uri.parse("https://facebook.com/MashiurRahmanSajib"));
+        }
+
+    }
+    public static Intent OpenTwitter(Context context){
+        try {
+            context.getPackageManager().getPackageInfo("com.twitter.android",0);
+            return new Intent(Intent.ACTION_VIEW,Uri.parse("https://twitter.com/Mashiur__"));
+        } catch (PackageManager.NameNotFoundException e) {
+
+            return new Intent(Intent.ACTION_VIEW,Uri.parse("https://twitter.com/Mashiur__"));
+        }
+
     }
 }
 
