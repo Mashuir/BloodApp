@@ -84,11 +84,11 @@
 
 
     <string-array name="Hospital_Name">
-        <item><b>Bangladesh RedCricnt Blood Bank</b></item>
-        <item><b>PG Hospital</b></item>
-        <item><b>Badhon</b></item>
-        <item><b>Koyantam blood bank</b></item>
-        <item><b>Sondhani</b></item>
+        <item>Bangladesh Red Crescent Blood Bank\nMohammadpur, Dhaka</item>
+        <item>Fatema Begum Red Crescent Blood Bank\nAndharkilla, Chittagong</item>
+        <item>Mujib Jahan Red Crescent Blood Bank\nCouhatta Sylhet</item>
+        <item><b>Ahad Red Crescent Blood Bank\nMunshi Meherullah Road, Jessore</b></item>
+        <item><b>Begum Tyoba Mojumdar Red Crescent Blood Bank\nPaharpur, Dinajpur</b></item>
         <item><b>Islami Blood Bank</b></item>
         <item><b>Ridhom</b></item>
         <item><b>RedCricent</b></item>
@@ -96,11 +96,11 @@
     </string-array>
 
     <string-array name="hospital_phone_number">
-        <item>01718226282</item>
-        <item>01701922722</item>
-        <item>01982378373</item>
-        <item>01928273363</item>
-        <item>01782937363</item>
+        <item>02_9116563</item>
+        <item>031_620685</item>
+        <item>01611_300900</item>
+        <item>0421_73100</item>
+        <item>0531_64021</item>
         <item>01928287363</item>
         <item>01628287363</item>
         <item>01625677282</item>
@@ -108,12 +108,71 @@
     </string-array>
 
     <string-array name="location_names">
-        <item>Dhaka</item>
+        <item>ALL</item>
         <item>Barisal</item>
+        <item>Barguna</item>
+        <item>Bagerhat</item>
+        <item>Bandarban</item>
+        <item>Bhola</item>
+        <item>Bogra</item>
+        <item>Brahmanbaria</item>
+        <item>Chandpur</item>
+        <item>Chuadanga</item>
+        <item>Chapainababganj</item>
         <item>Chittagong</item>
+        <item>Comilla</item>
+        <item>Coxsbazar</item>
+        <item>Dhaka</item>
+        <item>Dinajpur</item>
+        <item>Faridpur</item>
+        <item>Feni</item>
+        <item>Gazipur</item>
+        <item>Gaibandha</item>
+        <item>Gopalganj</item>
+        <item>Habiganj</item>
+        <item>Jamalpur</item>
+        <item>Jhalokati</item>
+        <item>Joypurhat</item>
+        <item>Jessore</item>
+        <item>Jhenaidah</item>
+        <item>Khagrachhari</item>
+        <item>Khulna</item>
+        <item>Kurigram</item>
+        <item>Kushtia</item>
+        <item>Kishoregonj</item>
+        <item>Lakshimpur</item>
+        <item>Lalmonirhat</item>
+        <item>Madaripur</item>
+        <item>Manikganj</item>
+        <item>Maulvibazar</item>
+        <item>Munshiganj</item>
+        <item>Mymensingh</item>
+        <item>Magura</item>
+        <item>Meherpur</item>
+        <item>Narail</item>
+        <item>Narayanganj</item>
+        <item>Narsingdi</item>
+        <item>Netrakona</item>
+        <item>Naogaon</item>
+        <item>Natore</item>
+        <item>Nilphamari</item>
         <item>Noakhali</item>
-        <item>France</item>
-        <item>Ghana</item>
+        <item>Patuakhali</item>
+        <item>Pabna</item>
+        <item>Panchagarh</item>
+        <item>Pirojpur</item>
+        <item>Rajbari</item>
+        <item>Rangamati</item>
+        <item>Rangpur</item>
+        <item>Rajshahi</item>
+        <item>Shariatpur</item>
+        <item>Sherpur</item>
+        <item>Sunamganj</item>
+        <item>Sylhet</item>
+        <item>Sirajganj</item>
+        <item>Satkhira</item>
+        <item>Tangail</item>
+        <item>Thakurgaon</item>
     </string-array>
 
     <string name="chooseBloodGroup">Choose Your Blood Group :</string>
@@ -139,8 +198,10 @@
     <string name="phone_number">Phone Number</string>
     <string name="image_icon">image Icon</string>
     <string name="pathao_app_icon">Pathao App Icon</string>
+    <string name="search_from_hospital">Search from hospital</string>
 
     <string-array name="bloodGroupName">
+        <item>ALL</item>
         <item>A+</item>
         <item>A-</item>
         <item>B+</item>

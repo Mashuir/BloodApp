@@ -1,8 +1,5 @@
 package com.example.user.bloodapp;
 
-/**
- * Created by User on 3/22/2018.
- */
 
 public class DonorInformation {
     private String donorId;
@@ -11,7 +8,7 @@ public class DonorInformation {
     private String donorBloodGroup;
     private String donorLocation;
 
-    public DonorInformation(){
+    public DonorInformation() {
 
     }
 

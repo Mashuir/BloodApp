@@ -47,9 +47,6 @@ public class FindBloodInApp extends AppCompatActivity {
         BloodFilter = findViewById(R.id.BloodFilter);
         locationFilter = getResources().getStringArray(R.array.location_names);
         LocationFilter = findViewById(R.id.LocationFilter);
-
-
-
     }
 
     @Override
@@ -96,6 +93,7 @@ public class FindBloodInApp extends AppCompatActivity {
 
         AlertDialog dialog = builder.create();
         dialog.show();
+
     }
 
     public void SelectLocationBtn(View view) {
@@ -123,6 +121,22 @@ public class FindBloodInApp extends AppCompatActivity {
     }
 
     public void filterBtn(View view) {
-        Toast.makeText(this, "Filter Button clicked", Toast.LENGTH_SHORT).show();
+        reference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                donorInformations.clear();
+                for (DataSnapshot ds: dataSnapshot.getChildren()){
+                    DonorInformation information = ds.getValue(DonorInformation.class);
+                    donorInformations.add(information);
+                }
+                donorlist donorAdapter = new donorlist(FindBloodInApp.this,donorInformations);
+                listView.setAdapter(donorAdapter);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
     }
 }
